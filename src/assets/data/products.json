@@ -1,0 +1,12 @@
+[
+    {"id":1,"name":"Crema Hidratante 50ml","category":"Cuidado facial","price":1200,"stock":25,"image":"assets/img/crema1.jpg","description":"Crema ligera para uso diario."},
+    {"id":2,"name":"Perfume Floral 30ml","category":"Fragancias","price":2500,"stock":10,"image":"assets/img/perfume1.jpg","description":"Aroma fresco y duradero."},
+    {"id":3,"name":"Shampoo Nutritivo 400ml","category":"Cuidado capilar","price":900,"stock":40,"image":"assets/img/shampoo1.jpg","description":"Fortalece y da brillo."},
+    {"id":4,"name":"Base Líquida Tono 12","category":"Maquillaje","price":1800,"stock":15,"image":"assets/img/base1.jpg","description":"Cobertura media, acabado natural."},
+    {"id":5,"name":"Mascarilla Facial Arcilla","category":"Cuidado facial","price":700,"stock":30,"image":"assets/img/mascarilla1.jpg","description":"Purifica y reduce brillo."},
+    {"id":6,"name":"Esmalte Rojo Clásico","category":"Uñas","price":350,"stock":50,"image":"assets/img/esmalte1.jpg","description":"Secado rápido, color intenso."},
+    {"id":7,"name":"Set Brochas Maquillaje","category":"Maquillaje","price":3200,"stock":8,"image":"assets/img/brochas1.jpg","description":"Set 7 piezas, fibras sintéticas."},
+    {"id":8,"name":"Desodorante Roll-On 50ml","category":"Higiene","price":650,"stock":60,"image":"assets/img/desodorante1.jpg","description":"Protección 48 horas."},
+    {"id":9,"name":"Aceite Corporal 100ml","category":"Cuidado corporal","price":1100,"stock":20,"image":"assets/img/aceite1.jpg","description":"Hidratación profunda y aroma suave."},
+    {"id":10,"name":"Sérum Antiedad 30ml","category":"Cuidado facial","price":4200,"stock":5,"image":"assets/img/serum1.jpg","description":"Reduce arrugas y reafirma la piel."}
+  ]  
