@@ -4,12 +4,24 @@
     <form (ngSubmit)="submit()">
       <label>
         Email:
-        <input [(ngModel)]="email" name="email" type="email" required />
+        <input 
+          [(ngModel)]="email" 
+          name="email" 
+          type="email" 
+          required 
+          placeholder="admin@nameksoft.local"
+        />
       </label>
   
       <label>
         Contraseña:
-        <input [(ngModel)]="password" name="password" type="password" required />
+        <input 
+          [(ngModel)]="password" 
+          name="password" 
+          type="password" 
+          required
+          placeholder="admin123"
+        />
       </label>
   
       <div *ngIf="error" class="error">{{ error }}</div>

@@ -1,23 +1,92 @@
 [
     {
       "id": 1,
-      "name": "Producto A",
-      "price": 12000,
-      "description": "Descripción del producto A",
-      "image": "https://via.placeholder.com/300"
+      "name": "Instant Balm – Protector Labial",
+      "category": "Maquillaje",
+      "price": 4500,
+      "stock": 50,
+      "description": "Bálsamo ultra brillo para labios.",
+      "image": "assets/img/1.jpg"
     },
     {
       "id": 2,
-      "name": "Producto B",
-      "price": 18500,
-      "description": "Descripción del producto B",
-      "image": "https://via.placeholder.com/300"
+      "name": "Elixir Vainilla – Eau de toilette",
+      "category": "Fragancias",
+      "price": 45000,
+      "stock": 20,
+      "description": "Eau de toilette de la familia olfativa gourmand.",
+      "image": "assets/img/2.jpg"
     },
     {
       "id": 3,
-      "name": "Producto C",
-      "price": 25000,
-      "description": "Descripción del producto C",
-      "image": "https://via.placeholder.com/300"
+      "name": "Diva – Corrector facial líquido",
+      "category": "Maquillaje",
+      "price": 4500,
+      "stock": 50,
+      "description": "Corrige, cubre, hidrata.",
+      "image": "assets/img/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "PHYTOCOMPLEX BIENESTAR FISICO- EFECTO CALOR",
+      "category": "Bienestar",
+      "price": 11500,
+      "stock": 10,
+      "description": "Phytocomplex bienestar físico- Efecto calor es una crema balsámica corporal, que nos brinda un calor localizado como almohadilla térmica.",
+      "image": "assets/img/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Baba de caracol – Crema reconstituyente",
+      "category": "Piel",
+      "price": 12000,
+      "stock": 24,
+      "description": "La crema baba de caracol genera un peeling suave, natural y gradual que renueva la superficie de la piel.",
+      "image": "assets/img/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Style – Serum para pestañas",
+      "category": "Maquillaje",
+      "price": 11900,
+      "stock": 22,
+      "description": "El Serúm de pestañas Style, fortalece, voluminiza y protege.",
+      "image": "assets/img/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "ESENCIA CEREZA- COLONIA SPRAY 125ML",
+      "category": "Esencia",
+      "price": 15900,
+      "stock": 11,
+      "description": "Esencia cereza, suavidad que envuelve tus sentidos.",
+      "image": "assets/img/7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mix.Me – Booster Peeling",
+      "category": "Piel",
+      "price": 11900,
+      "stock": 28,
+      "description": "Desarrollado con ácido glicólico, gluconolactona y alfahidroxiácidos.",
+      "image": "assets/img/8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Candy – Eau de toilette",
+      "category": "Infantiles",
+      "price": 21990,
+      "stock": 22,
+      "description": "Dulce, alegre y juguetona, Candy te sumerge en la fantasía de un mundo mágico de caramelos.",
+      "image": "assets/img/9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Hot – Eau de Toilette",
+      "category": "Fragancias",
+      "price": 46000,
+      "stock": 26,
+      "description": "Fragancia femenina con atomizador. Una combinación perfecta.",
+      "image": "assets/img/10.jpg"
     }
   ]  

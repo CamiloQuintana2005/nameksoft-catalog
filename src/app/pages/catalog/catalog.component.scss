@@ -9,12 +9,27 @@
     padding: 10px;
     border-radius: 6px;
     box-shadow: 0 0 4px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   
-    img {
+    .image-container {
       width: 100%;
-      border-radius: 4px;
-    }
+      height: 220px;        /* ALTURA FIJA para uniformidad */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* RECORTA para que TODAS se vean iguales */
+        border-radius: 4px;
+      }
+    }
+  }
+
     h3 {
       margin: 10px 0;
     }
@@ -23,4 +38,4 @@
       font-weight: bold;
       color: #02732a;
     }
-  }  
+  
