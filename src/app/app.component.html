@@ -1,6 +1,17 @@
 <header>
   <a routerLink="/">Catálogo</a>
   <a routerLink="/cart">🛒 Carrito ({{ cartCount }})</a>
+
+  <span style="float:right">
+    <ng-container *ngIf="!isLogged">
+      <a routerLink="/login">Iniciar sesión</a>
+    </ng-container>
+
+    <ng-container *ngIf="isLogged">
+      <span>Hola, {{ email }}</span>
+      <button (click)="logout()">Cerrar sesión</button>
+    </ng-container>
+  </span>
 </header>
 
 <router-outlet></router-outlet>

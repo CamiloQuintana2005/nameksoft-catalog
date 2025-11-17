@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { CartService } from './core/cart.service';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { CartService } from './core/cart.service';
+import { AuthService } from './core/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +13,18 @@ import { RouterLink } from '@angular/router';
 })
 export class AppComponent {
   cartCount = 0;
-  constructor(private cartService: CartService) {
+  isLogged = false;
+  email: string | null = null;
+
+  constructor(private cartService: CartService, private auth: AuthService) {
     this.cartService.cart$.subscribe(items => this.cartCount = items.length);
+    this.isLogged = this.auth.isLoggedIn();
+    this.email = this.auth.getUserEmail();
+  }
+
+  logout() {
+    this.auth.logout();
+    // recargar para actualizar UI o usar router nav
+    location.reload();
   }
 }
