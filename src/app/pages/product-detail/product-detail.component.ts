@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProductService } from '../../core/product.service';
 import { Product } from '../../models/product';
+import { CartService } from '../../core/cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -18,7 +19,8 @@ export class ProductDetailComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {
@@ -32,8 +34,8 @@ export class ProductDetailComponent {
 
   addToCart() {
     if (this.product) {
-      console.log("Producto agregado:", this.product.name);
+      this.cartService.addToCart(this.product);
+      alert(`"${this.product.name}" agregado al carrito`);
     }
   }
-
 }

@@ -1,10 +1,12 @@
 <h1>Catálogo de Productos</h1>
 
-<a [routerLink]="['/product', p.id]" class="card">
+<div class="grid">
+  <a class="card" *ngFor="let p of products" [routerLink]="['/product', p.id]">
     <div class="image-container">
       <img [src]="p.image" [alt]="p.name" />
     </div>
     <h3>{{ p.name }}</h3>
     <p>{{ p.description }}</p>
     <p class="price">${{ p.price }}</p>
-  </a>  
+  </a>
+</div>
