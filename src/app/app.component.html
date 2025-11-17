@@ -1,17 +1,22 @@
-<header>
-  <a routerLink="/">Catálogo</a>
-  <a routerLink="/cart">🛒 Carrito ({{ cartCount }})</a>
+<header class="main-header">
+  <nav>
+    <a routerLink="/">Catálogo</a>
+    <a routerLink="/cart">Carrito</a>
+    <a routerLink="/dashboard">Dashboard</a>
 
-  <span style="float:right">
-    <ng-container *ngIf="!isLogged">
-      <a routerLink="/login">Iniciar sesión</a>
-    </ng-container>
+    <span class="right">
+      <ng-container *ngIf="!isLogged">
+        <a routerLink="/login">Iniciar sesión</a>
+      </ng-container>
 
-    <ng-container *ngIf="isLogged">
-      <span>Hola, {{ email }}</span>
-      <button (click)="logout()">Cerrar sesión</button>
-    </ng-container>
-  </span>
+      <ng-container *ngIf="isLogged">
+        <span class="user">Hola, {{ email }}</span>
+        <button (click)="logout()">Salir</button>
+      </ng-container>
+    </span>
+  </nav>
 </header>
 
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>

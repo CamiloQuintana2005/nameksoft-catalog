@@ -1,0 +1,36 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #222;
+    color: white;
+    padding: 15px;
+  
+    nav {
+      display: flex;
+      align-items: center;
+  
+      a {
+        margin-right: 20px;
+        color: white;
+        font-weight: bold;
+      }
+  
+      .right {
+        margin-left: auto;
+  
+        .user {
+          margin-right: 12px;
+        }
+  
+        button {
+          background: #e63946;
+        }
+      }
+    }
+  }
+  
+  main {
+    padding: 20px;
+  }  
