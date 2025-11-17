@@ -1,0 +1,10 @@
+<h1>Catálogo de Productos</h1>
+
+<div class="grid">
+  <div class="card" *ngFor="let p of products">
+    <img [src]="p.image" alt="{{ p.name }}">
+    <h3>{{ p.name }}</h3>
+    <p>Categoría: {{ p.category }}</p>
+    <p>Precio: ${{ p.price }}</p>
+  </div>
+</div>
