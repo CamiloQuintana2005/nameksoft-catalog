@@ -1,59 +1,141 @@
-# NameksoftCatalog
+# 🛒 NamekSoft Catalog  
+Versión web del catálogo digital propuesto en el Pre-Proyecto de NamekSoft para Biggete.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
+Este proyecto es una **implementación visual y funcional del módulo de Catálogo y Gestión de Productos**, desarrollado con HTML, CSS, JavaScript y Angular, tal como solicita la consigna de EDI.
 
-## Development server
+> 📌 *El sistema es completamente visual. No tiene backend real ni base de datos. Todas las operaciones son simuladas.*
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🚀 Demo en línea
+**https://nameksoft-catalog.onrender.com**
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 📦 Repositorio
+**https://github.com/CamiloQuintana2005/nameksoft-catalog**
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+# 📖 Descripción del Proyecto
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Este sistema representa la **primer versión funcional del catálogo digital que NamekSoft plantea en el Pre-Proyecto para Biggete**.  
+En el documento original, Biggete necesitaba:
 
-```bash
-ng generate --help
-```
+- Mejorar su catálogo manual  
+- Centralizar productos  
+- Contar con una interfaz moderna  
+- Facilitar la venta y consulta de artículos  
+- Un panel administrativo para modificar los productos  
 
-## Building
+Este proyecto implementa una **demo completamente visual** de esas funciones.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+# ✨ Funcionalidades Implementadas
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 🛍️ **Catálogo de Productos**
+- Vista principal con 10 productos reales basados en la temática del pre-proyecto.  
+- Imágenes uniformes y diseño responsive.  
+- Ficha de detalle completa por producto.
 
-## Running unit tests
+### 🧺 **Carrito de Compras (Simulado)**
+- Agregar productos al carrito  
+- Ver contenido del carrito  
+- Calcular total  
+- Vaciar carrito  
+*(Todo almacenado en memoria, sin backend)*
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 🧾 **Detalle del Producto**
+- Imagen grande y descripción detallada  
+- Precio, categoría y stock  
+- Botón para agregar al carrito  
+- Diseño tipo e-commerce
 
-```bash
-ng test
-```
+### 🛠️ **Panel Administrativo (Dashboard) – Simulado**
+- Crear productos  
+- Editar productos  
+- Eliminar productos  
+- Formularios de edición al final de la página  
+- *Funciones 100% visuales sin persistencia real*
 
-## Running end-to-end tests
+### 🔐 **Login Simulado**
+- Campo Email: `admin@nameksoft.local`  
+- Campo Password: `admin123`  
+- Placeholder explicativo  
+- Validación visual  
+- No conecta con servidor
 
-For end-to-end (e2e) testing, run:
+### 🎨 **Mejoras Visuales (Aporte Personal)**
+- Rediseño completo del catálogo  
+- Ajustes tipográficos y de color  
+- Imágenes autoescaladas con `object-fit: cover`  
+- Cards con sombra y hover  
+- Detalle de producto en layout horizontal  
+- Mensajes informativos agregados para navegación
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+# 🛠️ Tecnologías Utilizadas
 
-## Additional Resources
+- **Angular 17+ (Standalone Components)**
+- **TypeScript**
+- **HTML5**
+- **SCSS / CSS**
+- **JavaScript**
+- **Git / GitHub**
+- **Render (Deploy estático)**
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+# 📁 Estructura del Proyecto
+
+src/
+├── app/
+│ ├── pages/
+│ │ ├── catalog/
+│ │ ├── product-detail/
+│ │ ├── dashboard/
+│ │ └── login/
+│ ├── core/
+│ └── models/
+├── assets/
+│ ├── data/products.json
+│ └── products/ (imágenes)
+└── index.html
+
+
+---
+
+# ▶️ Cómo Ejecutarlo Localmente
+
+1. Clonar el repositorio:
+
+git clone <URL-del-repo>
+
+2. Entrar al proyecto:
+
+cd nameksoft-catalog
+
+3. Instalar dependencias:
+
+npm install
+
+4. Ejecutar el servidor:
+
+ng serve --open
+
+
+---
+
+# 📌 Notas Importantes
+
+- Este proyecto **no tiene backend** (cumple con la consigna).  
+- Todos los datos se cargan desde `products.json`.  
+- El carrito y el panel administrativo son **simulaciones visuales**.  
+- El objetivo es mostrar **flujo de interacción, interfaz, diseño y manejo de Angular**.
+
+---
+
+# 📜 Créditos
+Proyecto desarrollado como **Trabajo Final de Estructura de Datos e Interfaces (EDI)**, basado en el **Pre-Proyecto de NamekSoft**.
