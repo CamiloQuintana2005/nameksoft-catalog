@@ -21,4 +21,39 @@ export class ProductService {
       map(products => products.find(p => p.id === id) || null)
     );
   }
+
+  create(product: Product) {
+    const items = this.getCache();
+    
+    product.id = items.length ? Math.max(...items.map(x => x.id)) + 1 : 1;
+    items.push(product);
+  
+    localStorage.setItem('products', JSON.stringify(items));
+  }
+  
+  update(product: Product) {
+    const items = this.getCache();
+    const index = items.findIndex(p => p.id === product.id);
+  
+    if (index >= 0) {
+      items[index] = product;
+      localStorage.setItem('products', JSON.stringify(items));
+    }
+  }
+  
+  delete(id: number) {
+    const items = this.getCache().filter(p => p.id !== id);
+    localStorage.setItem('products', JSON.stringify(items));
+  }  
+
+  private getCache(): Product[] {
+    const data = localStorage.getItem('products');
+  
+    if (data) {
+      return JSON.parse(data);
+    }
+  
+    return [];
+  }  
+
   }

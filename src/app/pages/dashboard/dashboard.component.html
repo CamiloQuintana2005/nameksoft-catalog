@@ -1,0 +1,70 @@
+<h1>Panel Administrativo</h1>
+
+<div class="actions">
+  <button (click)="startCreate()">➕ Crear producto</button>
+</div>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Categoría</th>
+    <th>Precio</th>
+    <th>Stock</th>
+    <th>Acciones</th>
+  </tr>
+
+  <tr *ngFor="let p of products">
+    <td>{{ p.id }}</td>
+    <td>{{ p.name }}</td>
+    <td>{{ p.category }}</td>
+    <td>${{ p.price }}</td>
+    <td>{{ p.stock }}</td>
+    <td>
+      <button (click)="startEdit(p)">Editar</button>
+      <button (click)="delete(p.id)">Eliminar</button>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<div *ngIf="editing">
+  <h2>{{ mode === 'create' ? 'Crear producto' : 'Editar producto' }}</h2>
+
+  <form (ngSubmit)="save()">
+    
+    <label>
+      Nombre:
+      <input [(ngModel)]="form.name" name="name">
+    </label>
+
+    <label>
+      Categoría:
+      <input [(ngModel)]="form.category" name="category">
+    </label>
+
+    <label>
+      Precio:
+      <input [(ngModel)]="form.price" name="price" type="number">
+    </label>
+
+    <label>
+      Stock:
+      <input [(ngModel)]="form.stock" name="stock" type="number">
+    </label>
+
+    <label>
+      Descripción:
+      <textarea [(ngModel)]="form.description" name="description"></textarea>
+    </label>
+
+    <label>
+      Imagen URL:
+      <input [(ngModel)]="form.image" name="image">
+    </label>
+
+    <button type="submit">Guardar</button>
+    <button type="button" (click)="cancel()">Cancelar</button>
+  </form>
+</div>
